@@ -1,34 +1,63 @@
-// script.js
+// scripts.js
 
-const 1-root = document(order1),
-const 1-biscuits: document(biscuits),
-const 1-donuts: document(donuts),
-const 1-pancakes: document(pancakes),
-const 1-status: document(status)
+const STATUS_MAP = {
+    shelf: {
+        color: 'green',
+        canReserve: true,
+        canCheckout: true,
+        canCheckIn: false,
+    },
+    reserved: {
+        color: 'blue',
+        canReserve: false,
+        canCheckout: true,
+        canCheckIn: false,
+    },
+    overdue: {
+        color: 'red',
+        canReserve: false,
+        canCheckout: false,
+        canCheckIn: true,
+    },
+    checkedOut: {
+        color: 'orange',
+        canReserve: false,
+        canCheckout: false,
+        canCheckIn: true,
+    }
+}
 
-const 2-root = document(order2),
-const 2-biscuits: document(biscuits),
-const 2-donuts: document(donuts),
-const 2-pancakes: document(pancakes),
-const 2-status: document(status)
+// Edit below line 
 
-const 3-root = document(order3),
-const 3-biscuits: document(biscuits),
-const 3-donuts: document(donuts),
-const 3-pancakes: document(pancakes),
-const 3-status: document(status)
+status = selector(status)
+reserve = selector(reserve)
+checkout = selector(checkout)
+checkin = selector(checkin)
 
-1-biscuits= 1-root.biscuits,
-1-donuts = 1-root.donuts,
-1-pancakes = 1-root.pancakes,
-1-status = 1-root.status ? Delivered : Pending
+status = selector(status)
+reserve = selector(reserve)
+checkout = selector(checkout)
+checkin = selector(checkin)
 
-2-biscuits= 2-root.biscuits,
-2-donuts = 2-root.donuts,
-2-pancakes = 2-root.pancakes,
-2-status = 2-root.status ? Delivered : Pending
+status = selector(status)
+reserve = selector(reserve)
+checkout = selector(checkout)
+checkin = selector(checkin)
 
-3-biscuits= 3-root.biscuits,
-3-donuts = 3-root.donuts,
-3-pancakes = 3-root.pancakes,
-3-status = 3-root.status ? Delivered : Pending
+checkin.color = none
+status.style.color = STATUS_MAP.status.color
+reserve = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
+checkout = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
+checkin = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+
+checkin.color = none
+status.style.color = STATUS_MAP.status.color
+reserve = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
+checkout = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
+checkin = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+
+checkin.color = none
+status.style.color = STATUS_MAP.status.color
+reserve = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
+checkout = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
+checkin = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
